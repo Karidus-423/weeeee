@@ -1,24 +1,9 @@
-local astal = require("astal")
 local App = require("astal.gtk3.app")
-
+local Hypr = require("lgi").require("AstalHyprland")
 local Bar = require("widget.Bar")
-local src = require("lib").src
-
-local scss = src("style.scss")
-local css = "/tmp/style.css"
-
-astal.exec("sass " .. scss .. " " .. css)
 
 App:start({
-	instance_name = "arc",
-	css = css,
-	request_handler = function(msg, res)
-		print(msg)
-		res("ok")
-	end,
 	main = function()
-		for _, mon in pairs(App.monitors) do
-			Bar(mon)
-		end
-	end,
+		Bar(0)
+	end
 })
