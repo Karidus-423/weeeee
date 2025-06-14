@@ -2,6 +2,7 @@ local Widget = require("astal.gtk3.widget")
 local Anchor = require("astal.gtk3").Astal.WindowAnchor
 local Workspaces = require("widget.Workspaces")
 local Clock = require("widget.Clock")
+local Battery = require("widget.Battery")
 
 
 return function(monitor)
@@ -33,6 +34,7 @@ return function(monitor)
 				vertical = true,
 				class_name = "app_bottom",
 				halign = "END",
+				Battery(),
 			}),
 		}),
 	})
