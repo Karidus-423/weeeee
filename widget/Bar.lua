@@ -33,7 +33,7 @@ return function(monitor)
 			Widget.Box({
 				vertical = true,
 				class_name = "app_bottom",
-				halign = "END",
+				valign = "END",
 				Battery(),
 			}),
 		}),

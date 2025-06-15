@@ -7,9 +7,10 @@ return function()
 	local bat = Battery.get_default()
 
 	return Widget.Box({
-		class_name = "Battery",
+		class_name = "battery_box",
 		vertical = true,
-		visible = bind(bat, "is-present"),
+		-- visible = bind(bat, "is-present"),
+		visible = true,
 		Widget.Icon({
 			icon = bind(bat, "battery-icon-name"),
 		}),

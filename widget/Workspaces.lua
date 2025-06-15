@@ -10,7 +10,7 @@ return function()
 	return Widget.Box({
 		class_name = "workspaces_box",
 		vertical = true,
-		--Default 7 workspaces.
+		--TODO:Default 7 workspaces.
 		bind(hypr, "workspaces"):as(function(wss)
 			table.sort(wss, function(a, b) return a.id < b.id end)
 
@@ -20,13 +20,12 @@ return function()
 						class_name = bind(hypr, "focused-workspace"):as(
 							function(fw) return fw == ws and "focused" or "unfocused" end
 						),
-						-- on_clicked = function() ws:focus() end,
 						Widget.Label({
 							label = bind(ws, "id"):as(
 								function(v)
 									return type(v) == "number"
-										and string.format("%.0f", v)
-										or v
+										and string.format("", v)
+										or string.format("h", v)
 								end
 							),
 						})
