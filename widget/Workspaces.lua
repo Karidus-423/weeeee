@@ -17,15 +17,15 @@ return function()
 			return map(wss, function(ws)
 				if not (ws.id >= -99 and ws.id <= -2) then -- filter out special workspaces
 					return Widget.Box({
+						halign = "CENTER",
 						class_name = bind(hypr, "focused-workspace"):as(
 							function(fw) return fw == ws and "focused" or "unfocused" end
 						),
 						Widget.Label({
-							label = bind(ws, "id"):as(
+							label = bind(hypr, "focused-workspace"):as(
 								function(v)
-									return type(v) == "number"
-										and string.format("", v)
-										or string.format("h", v)
+									return v == ws and string.format("", v)
+										or string.format("", v)
 								end
 							),
 						})

@@ -11,6 +11,7 @@ return function(format)
 		end
 	)
 	return Widget.Box({
+		halign = "CENTER",
 		class_name = "time_box",
 		Widget.Label({
 			class_name = "time_label",
