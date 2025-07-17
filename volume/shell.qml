@@ -12,7 +12,6 @@ import Quickshell.Widgets
 // palette = 5=#615f3b
 // palette = 6=#717F71
 // palette = 7=#737f7f
-// palette = 8=#737f7f
 
 Scope {
     id: root
@@ -67,7 +66,7 @@ Scope {
             Rectangle {
                 anchors.fill: parent
                 radius: height / 2
-                color: "#717F71"
+                color: "#4e5f63"
 
                 ColumnLayout {
                     anchors {
@@ -85,7 +84,7 @@ Scope {
 
                         implicitWidth: 10
                         radius: 20
-                        color: "#615f3b"
+                        color: "#737f7f"
 
                         Rectangle {
                             color: "#303E37"
