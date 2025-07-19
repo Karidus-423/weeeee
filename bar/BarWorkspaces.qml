@@ -5,6 +5,15 @@ import QtQuick.Effects
 import QtQuick.Layouts
 import Quickshell.Hyprland
 
+// palette = 0=#303E37
+// palette = 1=#634e4e
+// palette = 2=#4e635a
+// palette = 3=#727358
+// palette = 4=#4e5f63
+// palette = 5=#615f3b
+// palette = 6=#717F71
+// palette = 7=#737f7f
+
 MouseArea {
     id: root
 
@@ -81,7 +90,7 @@ MouseArea {
                     anchors.fill: parent
                     anchors.margins: 2
                     radius: width * 0.3
-                    color: wsItem.exists ? "#C0DB4C" : "#59622D"
+                    color: wsItem.exists ? "#303E37" : "#615f3b"
                 }
                 Image {
                     anchors.fill: parent

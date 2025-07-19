@@ -13,6 +13,7 @@ Scope {
                 implicitWidth: 60
                 implicitHeight: screen.height * 0.8
                 exclusiveZone: implicitWidth
+                color: "#4e5f63"
 
                 anchors {
                     left: true

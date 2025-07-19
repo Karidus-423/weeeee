@@ -5,7 +5,7 @@ import "../utils" as Utils
 
 Rectangle {
     id: root
-    color: "#ffffff"
+    color: "transparent"
     Layout.alignment: Qt.AlignVCenter
     implicitWidth: parent.width
     implicitHeight: parent.height * 0.1
