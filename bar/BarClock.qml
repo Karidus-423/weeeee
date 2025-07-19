@@ -1,17 +1,19 @@
 import QtQuick
 import QtQuick.Layouts
 
+import "../utils" as Utils
+
 Rectangle {
     id: root
     color: "#ffffff"
     Layout.alignment: Qt.AlignVCenter
-    implicitWidth: 50
+    implicitWidth: parent.width
     implicitHeight: parent.height * 0.1
 
     Text {
-        font.pointSize: 12
+        font.pointSize: 18
         anchors.centerIn: parent
         horizontalAlignment: Text.AlignHCenter
-        text: TimeProcess.curr_time
+        text: Utils.TimeProcess.curr_time
     }
 }

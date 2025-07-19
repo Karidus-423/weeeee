@@ -5,7 +5,7 @@ import QtQuick
 
 Singleton {
     id: root
-    property string format: "dddd\nHH\nMM"
+    property string format: "HH\nMM"
 
     readonly property string curr_time: {
         // The passed format string matches the default output of
